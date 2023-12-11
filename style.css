@@ -1,27 +1,27 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.headerContainer{
+.headerContainer {
   background-image: url('./assets/bgHeader.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
   height: 895px;
 }
 
-.navContainer{
+.navContainer {
   display: flex;
   justify-content: space-around;
   width: 900px;
   margin: 1rem;
 }
 
-.navLink{
+.navLink {
   display: flex;
   border-radius: 28px;
   border: 1px solid #FCC90D;
@@ -35,35 +35,46 @@
   text-align: center;
 }
 
-.stars{
+.stars {
   width: 1200px;
   justify-content: space-around;
 }
 
-.stars{
+.stars {
   width: 1200px;
   justify-content: space-around;
 }
 
-.stars img{
+.stars img {
   padding: 2em;
   animation: float 2s ease-in-out infinite;
 }
 
-.star2{
+.star2 {
   margin-top: 6rem;
 }
 
-.star3{
+.star3 {
   margin-top: 10rem;
 }
 
-.foguete{
+.headerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+
+.foguete {
   display: flex;
   flex-direction: column;
 }
 
-.foguete h1{
+
+
+.foguete h1 {
   color: #FCC90D;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Exotc350 Bd BT;
@@ -74,75 +85,147 @@
   text-align: center;
 }
 
-.effects{
+.effects {
   display: flex;
   width: 100%;
 }
 
-.airplane{
+.airplane {
   width: 377px;
   height: 284px;
   animation: float2 6s linear infinite;
 }
 
-.plan1{
+.plan1 {
   width: 121px;
   height: 69px;
   margin-top: 15rem;
 }
 
-.plan2{
+.plan2 {
   width: 170px;
   height: 97px;
-  padding-left:3rem;
-}
-
-.headerContent{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  width: 100%;
+  padding-left: 3rem;
 }
 
 
-.headerContent{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  width: 100%;
+#logomb{
+  display:none;
 }
 
-.logoImag{
+
+.logoImag {
   width: 636px;
   height: 551px;
   margin-top: -10rem;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
+@media screen and (max-width:412px) {
+  .headerContainer {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .stars {
+    width: 100%;
+
+  }
+
+  .star2,
+  .star3, #starmb {
+    display: none;
+  }
+
+  .headerContent {
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 700px;
+  }
+
+  .foguete,
+  .logo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+    
+  .foguete h1 {
+       
+    font-size: 24px;
+    width: 100%;
+    height: 100px;
+    
+  }
+
+  .effects{
+    width: 100%;
+    
+  }
+   
+
+  .airplane {
+    /* margin-left: 2rem;
+    padding-left: 2rem; */
+    width: 377px;
+    
+  }
+
+ .plan1,.plan2 {
+    display: none;
+   
+  }
+
+  #logomb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 337px;
+  }
+
+  #logomobile{
+    width: 327px;
+    margin: 2em auto;
+  }
+
+  
+  .logoImag {
+    display: none;
+  }
+  }
+
+  
 
 
 /*Animações do Header*/
-@keyframes float{
-  0%,100%{
+@keyframes float {
+
+  0%,
+  100% {
     transform: translateY(0);
-    
+
   }
-  50%{
+
+  50% {
     transform: translateY(-50px);
-    
+
   }
 }
 
-@keyframes float2{
-  0%, 100% {
+@keyframes float2 {
+
+  0%,
+  100% {
     transform: translateX(0);
-   
+
   }
+
   50% {
     transform: translateX(-50px);
-    
+
   }
-    
-  }
+
+}
+
