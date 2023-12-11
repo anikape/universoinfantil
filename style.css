@@ -127,6 +127,7 @@
  display: flex;
  align-items: center;
  justify-content: center;
+ flex-direction: column;
 }
 
 .criancas{
@@ -154,6 +155,67 @@
 .abc{
   width: 713px;
   height: 542px;
+}
+
+.escola{
+  display: flex;
+  width: 965px;
+  height: 359px;
+  background: #C3EDFF;
+}
+
+.school, .bercarioInfo, .hotel{
+  width: 442px;
+  height:260px;
+  margin:3em auto;
+}
+
+.school h2,.bercario h2, .hotel h2{
+  color: #232F7D;
+  font-family: Exo;
+  font-size: 36px;
+  font-weight: 600;
+  
+}
+
+.school p, .bercario p, .hotel p{
+  color: #232F7D;
+  font-family: Exo;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px;
+}
+
+.bercario{
+  display: flex;
+  background: #C3EDFF;
+  width: 965px;
+  height: 361px;
+  margin-top: 3rem;
+}
+
+.bercarioImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotelzinho{
+  display: flex;
+  width: 965px;
+  height: 358px;
+  background: #C3EDFF;
+  margin-top: 3rem;
+}
+
+.hotelImg img{
+  
 }
 
 @media screen and (max-width:412px) {
