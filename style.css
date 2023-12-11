@@ -109,8 +109,8 @@
 }
 
 
-#logomb{
-  display:none;
+#logomobile{
+  display: none;
 }
 
 
@@ -119,6 +119,41 @@
   height: 551px;
   margin-top: -10rem;
   /* object-fit: cover; */
+}
+
+/*Main*/
+
+.mainContainer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.criancas{
+  
+  justify-content: center;
+}
+
+.criancas img{
+  display: flex;
+  width: 1141px;
+  height: 642px;
+  margin: 2rem auto;
+}
+
+.criancas p{
+  color: #232F7D;
+  text-align: center;
+  font-family: Exo;
+  font-size: 24px;
+  font-weight: 600;
+  width: 1231px;
+  
+}
+
+.abc{
+  width: 713px;
+  height: 542px;
 }
 
 @media screen and (max-width:412px) {
@@ -164,9 +199,7 @@
     width: 100%;
     
   }
-   
-
-  .airplane {
+   .airplane {
     /* margin-left: 2rem;
     padding-left: 2rem; */
     width: 377px;
@@ -194,6 +227,14 @@
   .logoImag {
     display: none;
   }
+
+
+  .criancas img{
+    width: 80%;
+  }
+
+
+
   }
 
   
