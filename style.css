@@ -153,7 +153,7 @@
   
 }
 
-.abc{
+#abc{
   width: 713px;
   height: 542px;
 }
@@ -270,7 +270,32 @@
 .about img{
   margin: 0 auto;
  
+}
 
+.jornada div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flower{
+  width: 153px;
+  height: 167px;
+}
+
+.book{
+  width: 192px;
+  height: 139px;
+}
+
+.jornada div p{
+  padding-top: 8rem;
+  color: #232F7D;
+  font-family: Exo;
+  font-size: 30px;
+  font-weight: 600;
+  width: 1107px;
+  text-align: center;
+  
 }
 
 
