@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 .headerContainer {
@@ -164,13 +165,17 @@
   background: #C3EDFF;
 }
 
-.school, .bercarioInfo, .hotel{
+.school, .bercarioInfo {
   width: 442px;
   height:260px;
   margin:3em auto;
 }
 
-.school h2,.bercario h2, .hotel h2{
+
+
+
+
+.school h2,.bercario h2{
   color: #232F7D;
   font-family: Exo;
   font-size: 36px;
@@ -178,13 +183,15 @@
   
 }
 
-.school p, .bercario p, .hotel p{
+.school p, .bercario p{
   color: #232F7D;
   font-family: Exo;
   font-size: 20px;
   font-weight: 500;
   
 }
+
+
 
 .galery{
   display: flex;
@@ -200,23 +207,75 @@
   margin-top: 3rem;
 }
 
-.bercarioImg{
+#info{
+  padding-left: 3rem;
+}
+
+.bercarioImg, .hotelImg{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hotelzinho{
-  display: flex;
-  width: 965px;
-  height: 358px;
-  background: #C3EDFF;
-  margin-top: 3rem;
-}
+#arvore{
+  width: 500px;
+  height: 416px;
+  
+} 
 
-.hotelImg img{
+.turtle{
+  position: absolute;
+  top: 225rem;
+  right: 5%;
+  transform: translateY(-50%);
   
 }
+
+.about{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 584px;
+  background: #C3EDFF;
+  margin-top: 9rem;
+}
+
+.about div{
+  display: flex;
+  flex-direction: column;
+  width: 1323px;
+  height: 237px;
+  margin: 1em auto;
+
+}
+
+.about h3{
+  color: #232F7D;
+  font-family: Exo;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about p{
+  color: #232F7D;
+  font-family: Exo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.about img{
+  margin: 0 auto;
+ 
+
+}
+
+
+
+
 
 @media screen and (max-width:412px) {
   .headerContainer {
