@@ -370,8 +370,17 @@ align-items: center;
 .maps{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: stretch;
   padding-top: 2em;
+}
+
+.maps p{
+  color: #232F7D;
+font-family: Exo;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .map{
