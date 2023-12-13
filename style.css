@@ -1097,15 +1097,6 @@ button {
 }
 
 
-/* .about{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 622px;
-  background: #C3EDFF;
-  margin-top: 15rem;
-} */
-
 .about {
   display: flex;
   flex-direction: column;
@@ -1663,8 +1654,8 @@ button {
   margin: 0;
 }
 
-#libras{
-  display: none;
+.enabled{
+  right: 4rem !important;
 }
 
   }
