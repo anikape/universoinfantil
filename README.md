@@ -1,6 +1,8 @@
+[:brazil:](README.pt.md)
+
 Bem vindo ao Centro Educacional Universo Infantil!
 
-<img src="" alt="Imagem do site" />
+<img src="https://github.com/anikape/universoinfantil/blob/main/assets/universoInfantil.png?raw=true" alt="Imagem do site" />
 
 # Descrição
 
