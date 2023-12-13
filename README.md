@@ -1,4 +1,4 @@
-[:brazil:](README.pt.md)
+
 
 Bem vindo ao Centro Educacional Universo Infantil!
 
