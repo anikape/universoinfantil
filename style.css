@@ -706,10 +706,11 @@ margin: 1em auto;
 }
 
 .lapis {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; */
+  width:100%;
 }
 
 .contact {
