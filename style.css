@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 .headerContainer {
@@ -38,9 +38,51 @@
 }
 
 .navLink:hover {
-  color: #fcc80d8b  !important; 
-  transform: translateY(-5px); 
+  color: #fcc80d8b !important;
+  transform: translateY(-5px);
 }
+
+.music-player {
+  display: flex;
+  justify-content: flex-end;
+  /* Alinhar à direita */
+  margin-top: -26px;
+}
+
+#playPauseBtn {
+  color: #232F7D;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  /* Borda arredondada */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona a transformação ao efeito de transição */
+}
+
+#playPauseBtn:hover {
+  transform: translateY(-3px); /* Move o botão para cima ao passar o mouse sobre ele */
+}
+
+#playPauseBtn.play {
+  background-color: #FCC90D;
+}
+
+#playPauseBtn.pause {
+  background-color: #e74c3c;
+  color: #FCC90D;
+}
+
+#playPauseBtn i:before {
+  content: "\f04b";
+  /* Código Unicode para o ícone de play */
+}
+
+#playPauseBtn.pause i:before {
+  content: "\f04c";
+  /* Código Unicode para o ícone de pause */
+}
+
 
 .stars {
   width: 1200px;
@@ -96,7 +138,7 @@
 .airplane {
   width: 377px;
   height: 284px;
- 
+
 }
 
 .plan1 {
@@ -104,26 +146,26 @@
   height: 97px;
   margin-left: 8rem;
   margin-top: 6rem;
-  
+
 }
 
 .plan2 {
   width: 121px;
   height: 69px;
   margin-top: 13rem;
- }
-  
+}
+
 
 .logoImag {
   width: 636px;
   height: 551px;
   margin-top: -10rem;
   animation: floatAnimation 20s ease-in-out infinite;
-  
+
 }
 
-.logoMb{
-  display:none;
+.logoMb {
+  display: none;
 }
 
 
@@ -132,116 +174,130 @@
 /*Animações do Header*/
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
 
 @keyframes blink {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
 }
 
 @keyframes floatAnimation {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(-20px); 
+    transform: translateY(-20px);
   }
 }
 
 
 /*Main*/
 
-.mainContainer{
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.criancas{
-  
+.criancas {
   justify-content: center;
 }
 
-.criancaImg{
+.criancaImg {
   display: flex;
   width: 1141px;
   height: 642px;
   margin: 2rem auto;
 }
 
-.criancaImg2{
-display: none
+.criancaImg2 {
+  display: none
 }
 
-.criancas p{
+.criancas p {
   color: #232F7D;
   text-align: center;
   font-family: Exo;
   font-size: 24px;
   font-weight: 600;
   width: 1231px;
-  
+}
+#sala {
+  display: none !important;
 }
 
-#abc{
+#abc {
+  display: flex;
   width: 713px;
   height: 542px;
+  margin: 0 auto; 
+  align-items: center; 
+  justify-content: center; 
 }
 
-.sala{
-  display: none;
-}
 
-.escola{
+.escola {
   display: flex;
   width: 965px;
   height: 359px;
   background: #C3EDFF;
-  
+
 }
 
-.school, .bercarioInfo {
+.school,
+.bercarioInfo {
   width: 442px;
-  height:260px;
-  margin:3em auto;
+  height: 260px;
+  margin: 3em auto;
 }
 
-.school h2,.bercario h2{
+.school h2,
+.bercario h2 {
   color: #232F7D;
   font-family: Exo;
   font-size: 36px;
   font-weight: 600;
-  
+
 }
 
-.school p, .bercario p{
+.school p,
+.bercario p {
   color: #232F7D;
   font-family: Exo;
   font-size: 20px;
   font-weight: 500;
-  
+
 }
 
 
 
-.galery{
+.galery {
   display: flex;
   flex-wrap: wrap;
   width: 380px;
 }
 
-.bercario{
+.bercario {
   display: flex;
   background: #C3EDFF;
   width: 965px;
@@ -249,24 +305,25 @@ display: none
   margin-top: 3rem;
 }
 
-#info{
+#info {
   padding-left: 3rem;
 }
 
-.bercarioImg, .hotelImg{
+.bercarioImg,
+.hotelImg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#arvore{
+#arvore {
   width: 500px;
   height: 416px;
-  
-} 
+
+}
 
 .turtle {
-  position: absolute; 
+  position: absolute;
   bottom: -200rem;
   right: 0;
   transform: translateY(-50%);
@@ -285,15 +342,16 @@ display: none
 
 .about div {
   display: flex;
-  flex-wrap: wrap; /* Permitir que os itens quebrem linha em telas menores */
-  justify-content: center; 
-  align-items: center; 
-  width: 90%; 
+  flex-wrap: wrap;
+  /* Permitir que os itens quebrem linha em telas menores */
+  justify-content: center;
+  align-items: center;
+  width: 90%;
   margin: 2em auto;
 }
 
 
-.about h3{
+.about h3 {
   color: #232F7D;
   font-family: Exo;
   font-size: 36px;
@@ -302,7 +360,7 @@ display: none
   line-height: normal;
 }
 
-.about p{
+.about p {
   color: #232F7D;
   font-family: Exo;
   font-size: 20px;
@@ -311,31 +369,31 @@ display: none
   line-height: normal;
 }
 
-.hands1{
+.hands1 {
   margin: 0 auto;
- 
+
 }
 
-.hands{
+.hands {
   display: none;
 }
 
-.jornada div{
+.jornada div {
   display: flex;
   justify-content: space-around;
 }
 
-.flower{
+.flower {
   width: 153px;
   height: 167px;
 }
 
-.book{
+.book {
   width: 192px;
   height: 139px;
 }
 
-.dream{
+.dream {
   padding-top: 8rem;
   color: #232F7D;
   font-family: Exo;
@@ -343,27 +401,27 @@ display: none
   font-weight: 600;
   width: 1107px;
   text-align: center;
-  
+
 }
 
-#mundo{
+#mundo {
   display: flex;
   margin: 0 auto;
   margin-bottom: -64px;
 }
 
-#mundo2{
+#mundo2 {
   display: none;
 }
 
-footer{
-  background: #C3EDFF;  
+footer {
+  background: #C3EDFF;
   width: 100%;
   justify-content: center;
- 
+
 }
 
-.footerContainer{
+.footerContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 4rem;
@@ -371,80 +429,80 @@ footer{
 }
 
 
-.visit{
+.visit {
   width: 543px;
 }
 
-.visit h3{
+.visit h3 {
   color: #232F7D;
-font-family: Exo;
-font-size: 36px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Exo;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.visit p{
+.visit p {
   color: #232F7D;
-font-family: Exo;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-padding-top: 1em;
+  font-family: Exo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 1em;
 }
 
-.lapis{
+.lapis {
   display: flex;
   margin: 0 auto;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
 }
 
-.contact ul{
+.contact ul {
   display: flex;
   padding-top: 1em;
 }
 
-.contact ul li{
+.contact ul li {
   list-style-type: none;
 }
 
-.social{
+.social {
   width: 52px;
   height: 52px;
 }
 
-.maps{
+.maps {
   display: flex;
   align-items: center;
   justify-content: stretch;
   padding-top: 2em;
 }
 
-.maps p{
+.maps p {
   color: #232F7D;
-font-family: Exo;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Exo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.map{
+.map {
   width: 34px;
   height: 34px;
 }
 
-#mapH3{
+#mapH3 {
   padding-top: 1em;
 }
 
-.contact h3{
+.contact h3 {
   color: #232F7D;
   font-family: Exo;
   font-size: 30px;
@@ -453,14 +511,14 @@ line-height: normal;
   line-height: normal;
 }
 
-.formulario{
+.formulario {
   justify-content: center;
   align-items: center;
   height: 423px;
   width: 360px;
 }
 
-.formulario h3{
+.formulario h3 {
   color: #232F7D;
   text-transform: uppercase;
   font-family: Exo;
@@ -472,16 +530,16 @@ line-height: normal;
   padding-bottom: 1em;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
 }
 
-.labelForm{
+.labelForm {
   margin-bottom: 2rem;
 }
 
-label{
+label {
   display: flex;
   flex-direction: column;
   color: #232F7D;
@@ -493,7 +551,7 @@ label{
 
 }
 
-input{
+input {
   width: 358px;
   height: 43px;
   border-radius: 9px;
@@ -503,18 +561,18 @@ input{
   border: none;
 }
 
-textarea{
+textarea {
   width: 358px;
   height: 95px;
   border: none;
   border-radius: 9px;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  outline:none;
+  outline: none;
 
 }
 
-button{
+button {
   display: flex;
   width: 84px;
   height: 34px;
@@ -531,21 +589,21 @@ button{
   justify-content: center;
 }
 
-.copy{
+.copy {
   display: flex;
   background: #232F7D;
   width: 100%;
   height: 47px;
 }
 
-.copy p{
+.copy p {
   color: #FFF;
-font-family: Exo;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin: 1em auto;
+  font-family: Exo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 1em auto;
 }
 
 
@@ -555,178 +613,175 @@ margin: 1em auto;
     background-image: url('./assets/bgMobile.png');
   }
 
-  .headerContent{
+  .headerContent {
     flex-direction: column;
-  
   }
 
-  .stars{
+  .stars {
     display: none;
-   
   }
 
-  .effects img{
-    display:none;
+  .effects img {
+    display: none;
   }
 
-  .foguete h1{
+  .foguete h1 {
     font-size: 20px;
     width: 350px;
-    padding:2em 0 2em 0;
+    padding: 2em 0 2em 0;
     margin-top: -4em;
-    
+
   }
 
-  .logoImag{
-  display: none;
-     
-}
+  .logoImag {
+    display: none;
+  }
 
-.logoMb{
-  display: block;
-  margin-top: 3em;
-}
+  .logoMb {
+    display: block;
+    margin-top: 3em;
+  }
 
-.criancas{
-  width: 100%;
-  align-items: center;
-}
+  .criancas {
+    width: 100%;
+    align-items: center;
+  }
 
-.criancaImg{
- display: none;
-}
-
-#sala{
-  display: flex;
- margin: 0.5em auto;
-}
-
-.criancaImg2{
-  display: flex;
-  margin: 2em auto;
-}
-
-.criancas p{
-  width: 100%;
-  font-size: 16px;
-  padding: 0.5em;
-}
-
-#abc{
-  display: none;
-}
-
-.turtle{
-  display: none;
-}
-
-.escola, .bercario{
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  padding: 0.5em;
-}
+  .criancaImg {
+    display: none;
+  }
 
 
 
-.school p, .bercario p{
+  #sala {
+    display: flex;
+    margin: 0.5em auto;
+  }
+
+  .criancaImg2 {
+    display: flex;
+    margin: 2em auto;
+  }
+
+  .criancas p {
+    width: 100%;
+    font-size: 16px;
+    padding: 0.5em;
+  }
+
+  
+  .turtle {
+    display: none;
+  }
+
+  .escola,
+  .bercario {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    padding: 0.5em;
+  }
+
+
+
+  .school p,
+  .bercario p {
     font-size: 19px;
     width: 75%;
-}
+  }
 
-.hands1{
-  display: none;
-}
+  .hands1 {
+    display: none;
+  }
 
-.hands{
-  display: flex;
-}
+  .hands {
+    display: flex;
+  }
 
-.flower{
-  width: 63px;
-  height: 87px;
-  
-}
+  .flower {
+    width: 63px;
+    height: 87px;
 
-.book{
-  width: 100px;
-  height: 59px;
-  padding-top:1em;
-}
+  }
 
-.dream{
-  font-size: 20px;
-}
+  .book {
+    width: 100px;
+    height: 59px;
+    padding-top: 1em;
+  }
 
-#mundo{
-  display: none;
-}
+  .dream {
+    font-size: 20px;
+  }
 
-#mundo2{
-  display: flex;
-  width: 100%;
-}
+  #mundo {
+    display: none;
+  }
 
-.footerContainer {
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  text-align: center;
-}
+  #mundo2 {
+    display: flex;
+    width: 100%;
+  }
 
-.visit,
-.contact,
-.formulario {
-  width: 100%;
-  margin-bottom: 2rem;
-  justify-content: center;
-}
+  .footerContainer {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    text-align: center;
+  }
 
-  .visit h3{
+  .visit,
+  .contact,
+  .formulario {
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .visit h3 {
     width: 90%
   }
- 
-
-.visit p{
-  font-size: 16px;
-  width: 80%
-}
-
-.contact ul {
-  justify-content: center;
-}
-
-.maps {
-  flex-direction: column;
-  align-items: center;
-}
-
-.copy {
-  padding: 1em 0;
-}
-
-.copy p{
-  font-size: 10px;
-}
-
-.lapis{
-  width: 100%;
-}
-
-.form{
-  width: 100%
-}
-
-input, textarea{
-  width: 100%
-}
-
-div[vw].enabled{
-  display: flex;
-  margin-right: 2rem !important;
-  
-}
 
 
+  .visit p {
+    font-size: 16px;
+    width: 80%
+  }
+
+  .contact ul {
+    justify-content: center;
+  }
+
+  .maps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy {
+    padding: 1em 0;
+  }
+
+  .copy p {
+    font-size: 10px;
+  }
+
+  .lapis {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%
+  }
+
+  input,
+  textarea {
+    width: 100%
+  }
+
+  div[vw].enabled {
+    display: flex;
+    margin-right: 2rem !important;
+
+  }
 
 }
