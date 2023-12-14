@@ -311,6 +311,23 @@
   background: #C3EDFF;
   width: 965px;
   height: 361px;
+  margin-top: 3rem<<<<<<< HEAD
+.galery img {
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.galery img:hover {
+  transform: scale(1.2); /* Ajusta a escala para o efeito de zoom desejado */
+}
+
+
+=======
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
+.bercario {
+  display: flex;
+  background: #C3EDFF;
+  width: 965px;
+  height: 361px;
   margin-top: 3rem;
 }
 
@@ -484,6 +501,7 @@ footer {
 .social {
   width: 52px;
   height: 52px;
+<<<<<<< HEAD
   transition: transform 0.3s ease-in-out; 
 }
 
@@ -492,6 +510,10 @@ footer {
 }
 
 
+=======
+}
+
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
 .maps {
   display: flex;
   align-items: center;
@@ -553,6 +575,7 @@ footer {
 .labelForm {
   margin-bottom: 2rem;
 }
+<<<<<<< HEAD
 button[type="submit"] {
   background-color: #232F7D;
   color: #ffffff;
@@ -569,6 +592,8 @@ button[type="submit"]:hover {
   transform: translateY(-5px);
 }
 
+=======
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
 
 label {
   display: flex;
@@ -661,6 +686,10 @@ button {
     width: 350px;
     padding: 2em 0 2em 0;
     margin-top: -4em;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
   }
 
   .logoImag {
@@ -681,6 +710,11 @@ button {
     display: none;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
   #sala {
     display: flex;
     margin: 0.5em auto;
@@ -696,6 +730,7 @@ button {
     font-size: 16px;
     padding: 0.5em;
   }
+<<<<<<< HEAD
   .galery {
     display: inline;
     width: 100% !important;
@@ -704,6 +739,14 @@ button {
     display: none;
   }
   
+=======
+
+  
+  .turtle {
+    display: none;
+  }
+
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
   .escola,
   .bercario {
     flex-direction: column;
@@ -713,6 +756,11 @@ button {
     padding: 0.5em;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
   .school p,
   .bercario p {
     font-size: 19px;
@@ -750,8 +798,11 @@ button {
   #mundo2 {
     display: flex;
     width: 100%;
+<<<<<<< HEAD
     margin-bottom: -64px;
     
+=======
+>>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
   }
 
   .footerContainer {
@@ -776,42 +827,3 @@ button {
   .visit p {
     font-size: 16px;
     width: 100%
-  }
-
-  .contact ul {
-    justify-content: center;
-  }
-
-  .maps {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .copy {
-    padding: 1em 0;
-  }
-
-  .copy p {
-    font-size: 10px;
-  }
-
-  .lapis {
-    width: 100%;
-  }
-
-  .form {
-    width: 100%
-  }
-
-  input,
-  textarea {
-    width: 100%
-  }
-
-  div[vw].enabled {
-    display: flex;
-    margin-right: 2rem !important;
-
-  }
-
-}
