@@ -651,10 +651,13 @@ button {
     display: none;
   }
 
+  #abc{
+    display: none !important;
+  }
 
 
   #sala {
-    display: flex;
+    display: flex !important;
     margin: 0.5em auto;
   }
 
