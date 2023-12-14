@@ -1,0 +1,8 @@
+Sitemap: https://universoinfantilceu.com.br/sitemap.xml
+
+User-agent: *
+Allow: /
+
+
+
+
