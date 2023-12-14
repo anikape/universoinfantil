@@ -122,6 +122,10 @@
   
 }
 
+.logoMb{
+  display:none;
+}
+
 
 
 
@@ -169,11 +173,15 @@
   justify-content: center;
 }
 
-.criancas img{
+.criancaImg{
   display: flex;
   width: 1141px;
   height: 642px;
   margin: 2rem auto;
+}
+
+.criancaImg2{
+display: none
 }
 
 .criancas p{
@@ -191,11 +199,16 @@
   height: 542px;
 }
 
+.sala{
+  display: none;
+}
+
 .escola{
   display: flex;
   width: 965px;
   height: 359px;
   background: #C3EDFF;
+  
 }
 
 .school, .bercarioInfo {
@@ -298,9 +311,13 @@
   line-height: normal;
 }
 
-.about img{
+.hands1{
   margin: 0 auto;
  
+}
+
+.hands{
+  display: none;
 }
 
 .jornada div{
@@ -318,7 +335,7 @@
   height: 139px;
 }
 
-.jornada div p{
+.dream{
   padding-top: 8rem;
   color: #232F7D;
   font-family: Exo;
@@ -333,6 +350,10 @@
   display: flex;
   margin: 0 auto;
   margin-bottom: -64px;
+}
+
+#mundo2{
+  display: none;
 }
 
 footer{
@@ -530,17 +551,182 @@ margin: 1em auto;
 
 @media screen and (max-width: 768px) {
 
+  .headerContainer {
+    background-image: url('./assets/bgMobile.png');
+  }
+
   .headerContent{
     flex-direction: column;
+  
+  }
+
+  .stars{
+    display: none;
+   
   }
 
   .effects img{
     display:none;
   }
 
+  .foguete h1{
+    font-size: 20px;
+    width: 350px;
+    padding:2em 0 2em 0;
+    margin-top: -4em;
+    
+  }
+
   .logoImag{
-    width: 400px;
-    height: 300px;
-    margin-top: 0;
+  display: none;
+     
+}
+
+.logoMb{
+  display: block;
+  margin-top: 3em;
+}
+
+.criancas{
+  width: 100%;
+  align-items: center;
+}
+
+.criancaImg{
+ display: none;
+}
+
+#sala{
+  display: flex;
+ margin: 0.5em auto;
+}
+
+.criancaImg2{
+  display: flex;
+  margin: 2em auto;
+}
+
+.criancas p{
+  width: 100%;
+  font-size: 16px;
+  padding: 0.5em;
+}
+
+#abc{
+  display: none;
+}
+
+.turtle{
+  display: none;
+}
+
+.escola, .bercario{
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+
+
+.school p, .bercario p{
+    font-size: 19px;
+    width: 75%;
+}
+
+.hands1{
+  display: none;
+}
+
+.hands{
+  display: flex;
+}
+
+.flower{
+  width: 63px;
+  height: 87px;
   
+}
+
+.book{
+  width: 100px;
+  height: 59px;
+  padding-top:1em;
+}
+
+.dream{
+  font-size: 20px;
+}
+
+#mundo{
+  display: none;
+}
+
+#mundo2{
+  display: flex;
+  width: 100%;
+}
+
+.footerContainer {
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  text-align: center;
+}
+
+.visit,
+.contact,
+.formulario {
+  width: 100%;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+  .visit h3{
+    width: 90%
+  }
+ 
+
+.visit p{
+  font-size: 16px;
+  width: 80%
+}
+
+.contact ul {
+  justify-content: center;
+}
+
+.maps {
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy {
+  padding: 1em 0;
+}
+
+.copy p{
+  font-size: 10px;
+}
+
+.lapis{
+  width: 100%;
+}
+
+.form{
+  width: 100%
+}
+
+input, textarea{
+  width: 100%
+}
+
+div[vw].enabled{
+  display: flex;
+  margin-right: 2rem !important;
+  
+}
+
+
+
 }
