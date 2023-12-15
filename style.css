@@ -45,7 +45,7 @@
 .music-player {
   display: flex;
   justify-content: flex-end;
-  /* Alinhar à direita */
+  
   margin-top: -26px;
 }
 
@@ -628,11 +628,15 @@ button {
   .headerContainer {
     background-image: url('./assets/bgMobile.png');
     width: 100%;
-    overflow-x: hidden;
+ 
   }
 
   .headerContent {
     flex-direction: column;
+  }
+
+  .music-player{
+    margin-left: -47rem;
   }
 
   .stars{
@@ -759,7 +763,7 @@ button {
   #mundo2 {
     display: flex;
     width: 100%;
-    margin-bottom: -64px;
+   
   }
 
   .footerContainer {
