@@ -55,13 +55,12 @@
   font-size: 16px;
   border: none;
   border-radius: 15px;
-  /* Borda arredondada */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona a transformação ao efeito de transição */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 #playPauseBtn:hover {
-  transform: translateY(-3px); /* Move o botão para cima ao passar o mouse sobre ele */
+  transform: translateY(-3px); 
 }
 
 #playPauseBtn.play {
@@ -75,7 +74,7 @@
 
 #playPauseBtn i:before {
   content: "\f04b";
-  /* Código Unicode para o ícone de play */
+  
 }
 
 #playPauseBtn.pause i:before {
@@ -613,8 +612,7 @@ button {
 
   .headerContainer {
     background-image: url('./assets/bgMobile.png');
-    width: 100%;
-    height: 50%;
+    
   }
 
   .headerContent {
@@ -800,10 +798,5 @@ button {
     width: 100%
   }
 
-  div[vw].enabled {
-    display: flex;
-    margin-right: 4rem !important;
-
-  }
 
 }
