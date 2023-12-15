@@ -589,6 +589,8 @@ button {
   justify-content: center;
 }
 
+
+
 .copy {
   display: flex;
   background: #232F7D;
@@ -611,13 +613,27 @@ button {
 
   .headerContainer {
     background-image: url('./assets/bgMobile.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 50%;
   }
 
   .headerContent {
     flex-direction: column;
   }
 
-  .stars {
+  .stars{
+    width: 100%;
+  }
+
+  .stars .star1:last-child {
+    display: none;
+  }
+
+  .star2, .star3 {
     display: none;
   }
 
@@ -629,7 +645,7 @@ button {
     font-size: 20px;
     width: 350px;
     padding: 2em 0 2em 0;
-    margin-top: -4em;
+   
 
   }
 
@@ -640,6 +656,10 @@ button {
   .logoMb {
     display: block;
     margin-top: 3em;
+  }
+
+  .mainContainer{
+    overflow-x: hidden;
   }
 
   .criancas {
@@ -686,6 +706,9 @@ button {
     padding: 0.5em;
   }
 
+  .bercarioInfo{
+    width: 100%;
+  }
 
 
   .school p,
@@ -783,7 +806,7 @@ button {
 
   div[vw].enabled {
     display: flex;
-    margin-right: 2rem !important;
+    margin-right: 4rem !important;
 
   }
 

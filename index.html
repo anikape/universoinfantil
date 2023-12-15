@@ -237,7 +237,7 @@
 
         <h3>Formulário</h3>
 
-        <form action="https://formspree.io/f/meqbyvbb" method="POST">
+        <form id="contactForm" action="https://formspree.io/f/xdoqnokd" method="POST">
           <div class="labelForm">
             <label for="name">Nome</label>
             <input type="text" name="name">
@@ -253,7 +253,11 @@
           </div>
           <!-- your other form fields go here -->
           <button type="submit">Enviar</button>
+          <div id="successMessage" style="display: none; justify-content: center; align-items: center; text-align: center; margin: 0 auto; background-color: #f0f0f0; color: #232F7D; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">Mensagem enviada com sucesso!</div>
+          
         </form>
+      
+        
 
       </div>
     </section>
@@ -284,6 +288,8 @@
     }
   </script>
   <script src="script.js" defer></script>
+  <script src="./form.js"></script>
+ 
 </body>
 
 </html>
