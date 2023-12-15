@@ -625,6 +625,10 @@ button {
 
 @media screen and (max-width: 768px) {
 
+  body{
+    width: 100%;
+  }
+
   .headerContainer {
     background-image: url('./assets/bgMobile.png');
     width: 100%;
