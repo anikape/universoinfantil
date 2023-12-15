@@ -296,6 +296,15 @@
   width: 380px;
 }
 
+.galery img {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.galery img:hover {
+  transform: scale(1.2);
+}
+
+
 .bercario {
   display: flex;
   background: #C3EDFF;
@@ -474,7 +483,13 @@ footer {
 .social {
   width: 52px;
   height: 52px;
+  transition: transform 0.3s ease-in-out; 
 }
+
+.social:hover {
+  transform: scale(1.2); 
+}
+
 
 .maps {
   display: flex;
