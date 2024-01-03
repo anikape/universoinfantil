@@ -632,6 +632,7 @@ button {
   .headerContainer {
     background-image: url('./assets/bgMobile.png');
     width: 100%;
+    max-height: 795px;
  
   }
 
