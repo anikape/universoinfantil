@@ -35,10 +35,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav navContainer">
-              <a class="nav-link navLink" href="#">Início</a>
+              <a class="nav-link navLink" href="./index.html">Início</a>
               <a class="nav-link navLink" href="#aboutUs">Sobre Nós</a>
               <a class="nav-link navLink" href="#services">Espaço</a>
               <a class="nav-link navLink" href="#services">Serviços</a>
+              <a class="nav-link navLink" href="#">Equipe</a>
               <a class="nav-link navLink" href="#contato">Contato</a>
               <div class="music-player">
                 <audio id="audio" src="360ytmp3.com_256kbps-musica-aquarela-original-toquinho.mp3"></audio>
@@ -91,6 +92,16 @@
 
 
   <main>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <span class="close" onclick="fecharPopup()">&times;</span>
+         <img src="./assets/news.jpg" alt="">
+      </div>
+  </div>
+
+  <!-- Seu Código JavaScript -->
     <section class="mainContainer">
       <div class="criancas">
         <img class="criancaImg" src="./assets/criancas.png" alt="crianças brincando" />
@@ -279,6 +290,7 @@
   </script>
   <script src="./script.js" defer></script>
   <script src="./form.js"></script>
+  <script src="./popup.js"></script>
  
 </body>
 
