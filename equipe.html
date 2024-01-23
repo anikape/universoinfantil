@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equipe</title>
+  <title>Equipe Pedagógica</title>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="equipe.css">
 </head>
+
 <body>
   <header class="headerContainer">
-    
+
     <section class="navigation">
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav navContainer">
-              <a class="nav-link navLink" href="./index.html">Início</a>
-              <a class="nav-link navLink" href="#aboutUs">Sobre Nós</a>
-              <a class="nav-link navLink" href="#services">Espaço</a>
-              <a class="nav-link navLink" href="#services">Serviços</a>
-              <a class="nav-link navLink" href="./equipe.html">Equipe</a>
-              <a class="nav-link navLink" href="#contato">Contato</a>
-              <div class="music-player">
-                <audio id="audio" src="360ytmp3.com_256kbps-musica-aquarela-original-toquinho.mp3"></audio>
-                <button id="playPauseBtn" class="play">Play</button>
-              </div>
-            </div>
+
+      <nav class="navbar">
+
+        <ul class="nav-list">
+          <li><a class="navLink" href="index.html">Início</a></li>
+          <li><a class="navLink" href="#">Serviços</a></li>
+          <li><a class="navLink" href="#">Espaço</a></li>
+          <li><a class="navLink" href="equipe.html">Equipe</a></li>
+          <li><a class="navLink" href="#">Contato</a></li>
+          <div class="music-player">
+            <audio id="audio" src="360ytmp3.com_256kbps-musica-aquarela-original-toquinho.mp3"></audio>
+            <button id="playPauseBtn" class="play">Play</button>
           </div>
-        </div>
+        </ul>
+
+        <div class="menu-toggle">&#9776;</div>
       </nav>
+     
     </section>
+   
+    
+   
 
     <img class="moon" src="./assets/moon.png" alt="Imagem da Lua" srcset="">
     <img class="satelite" src="./assets/satelite.png" alt="Imagem da Lua" srcset="">
@@ -44,22 +46,224 @@
   <main>
     <section class="equipe">
 
-    <img src="./assets/naveazul.png" alt="">
+      <div class="equipeTitle">
+        <img class="naveAzul" src="./assets/naveazul.png" alt="">
+        <img src="./assets/estrela.png" alt="" class="estrela">
+        <img class="nuvem" src="./assets/nuvem.png" alt="Nuvem">
+        <h1 class="title">Equipe Pedagógica</h1>
+        <img src="./assets/planetalaranja.png" alt="Imagem de um planeta na cor laranja" class="planetalaranja">
+        <img  src="./assets/planetarosa.png" alt="Imagem de um planeta rosa" class="planetarosa">
+        
+        <img src="./assets/nave2.png" alt="" class="nave">
 
-    <div class="equipeTitle">
-      <img src="./assets/estrela.png" alt="" class="estrela">
-      <img src="./assets/nuvem.png" alt="">
-      <h1>Equipe Pedagógica</h1>
-      <img src="./assets/planetalaranja.png" alt="" class="planetalaranja">
-      <img src="./assets/planetarosa.png" alt="" class="planetarosa">
-      <img src="./assets/planetaverde.png" alt="" class="planetaverde">
-    </div>
+      </div>
+    </section>
+
+    <section class="cards">
+
+      <div class="card1">
+
+        <div class="container">
+          <div class="card" >
+          <div class="img-box">
+              <img src="./assets/Rose.png">
+          </div>
+          <div class="content">
+              <h2>Rosemere</h2>
+              <p>
+                    
+                Professora
+                Coordenadora Pedagógica 
+                Pedagoga (Neuropsicopedagoga) 
+              </p>
+         </div>
+        </div>
+      
+
+        <div class="container" id="cardTop" style="margin-top: -150px;">
+          <div class="card" >
+              <div class="img-box">
+                  <img src="./assets/juliana.png">
+              </div>
+              <div class="content">
+                  <h2>Juliana</h2>
+                  <p>
+                        
+                    Psicopedagoga
+                    Letras 
+                    Inglês 
+                    Pedagogia 
+                    Psicopedagogia 
+                    Mestrado em Linguística e Ensino - UFPB
+                    Especialização ABA (cursando) 
+                  </p>
+               
+              </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card" >
+              <div class="img-box">
+                  <img src="./assets/luciana.png">
+              </div>
+              <div class="content">
+                  <h2>Luciana</h2>
+                  <p>
+                        
+                    Auxiliar de Ensino Médio
+                    Curso de Berçarista 
+                  </p>
+               
+              </div>
+          </div>
+
+        </div>
+
+
+        <div class="turtleContainer">
+          <figure>
+            <img src="./assets/turtle.png" alt="" srcset="">
+          </figure>
+        </div>
+
+
+        <div class="card2">
+
+          <div class="container">
+            <div class="card" >
+            <div class="img-box">
+                <img src="./assets/tati.png">
+            </div>
+            <div class="content">
+                <h2>Thayllane </h2>
+                <p>
+                   Auxiliar de Ensino Médio 
+                </p>
+           </div>
+          </div>
+        
+  
+          <div class="container" id="cardTop" style="margin-bottom: -150px;">
+            <div class="card" >
+                <div class="img-box">
+                    <img src="./assets/betania.png">
+                </div>
+                <div class="content">
+                    <h2>Betânia</h2>
+                    <p>
+                      Professora de Ensino Médio Normal
+                    </p>
+                 
+                </div>
+            </div>
+          </div>
+  
+          <div class="container">
+            <div class="card" >
+                <div class="img-box">
+                    <img src="./assets/poli.png">
+                </div>
+                <div class="content">
+                    <h2>Poliana</h2>
+                    <p>
+                          
+                      Auxiliar de Ensino Médio
+                      Curso de Berçarista 
+                    </p>
+                 
+                </div>
+            </div>
+  
+          </div>
+  
+
+     
     
-   
+    </section>
 
-  </section>
+      
+<img class="montanha" src="./assets/montanhas.png" alt="Imagem de uma montanha">
 
   </main>
+
+  <footer>
+    <section class="footerContainer">
+
+
+      <div class="visit">
+        <h3>Agende uma Visita:</h3>
+        <p>Convidamos você a explorar pessoalmente o Centro Educacional Universo Infantil. Agende uma visita e descubra
+          como nosso compromisso com a educação de qualidade pode fazer a diferença na vida de seu filho. Estamos
+          ansiosos para recebê-lo em nosso centro, onde os sonhos ganham vida e o aprendizado se transforma em uma
+          jornada emocionante. No Centro Educacional Universo Infantil, estamos aqui para nutrir, educar e inspirar cada
+          criança, preparando-as para brilhar em seu próprio caminho no vasto universo do conhecimento. Seja bem-vindo à
+          nossa comunidade educacional, onde os sonhos se tornam realidade.</p>
+      </div>
+
+      <div id="contato" class="contact">
+        <h3>Contate-Nos</h3>
+
+        <ul>
+          <li>
+            <a href="https://wa.me/5581979144951" target="_blank">
+              <img class="social" src="./assets/whats-app.png" alt="Icone Whatsapp" srcset="">
+            </a>
+          </li>
+          <li>
+            <a href="social">
+              <img class="social" src="./assets/facebook.png" alt="Icone facebook" srcset="">
+            </a>
+          </li>
+          <li><a class="social" href="https://www.instagram.com/ceuniversoinfantil/" target='_blank'>
+              <img class="social" src="./assets/instagram-circle.png" alt="Icone instagram" srcset=""></a></li>
+          <li><a class="social" href="mailto:educuniversoinfantil@gmail.com " target='_blank'>
+            <img class="social"  src="./assets/circled-envelope.png" alt="Icone e-mail" srcset=""></a></li>
+        </ul>
+
+        <h3 id="mapH3">Localização:</h3>
+        <div class="maps">
+          <img class="map" src="./assets/place-marker.png" alt="Icone Mapa" srcset="">
+          <p>Caetés I, Abreu e Lima-PE</p>
+        </div>
+      </div>
+
+      <div class="formulario">
+
+        <h3>Formulário</h3>
+
+        <form id="contactForm" action="https://formspree.io/f/xdoqnokd" method="POST">
+          <div class="labelForm">
+            <label for="name">Nome</label>
+            <input type="text" name="name">
+          </div>
+          <div class="labelForm">
+            <label>E-mail
+            </label>
+            <input type="email" name="email">
+          </div>
+          <div class="labelForm">
+            <label>Mensagem</label>
+            <textarea name="message"></textarea>
+          </div>
+          <!-- your other form fields go here -->
+          <button type="submit">Enviar</button>
+          <div id="successMessage" style="display: none; justify-content: center; align-items: center; text-align: center; margin: 0 auto; background-color: #f0f0f0; color: #232F7D; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">Mensagem enviada com sucesso!</div>
+          
+        </form>
+      
+        
+
+      </div>
+    </section>
+
+    <img class="lapis" src="./assets/lapis.png" alt="Icone Lápis">
+
+    <div class="copy">
+      <p>TODOS OS DIREITOS RESERVADOS DESENVOLVIDO POR CODECRAFTHOUSE | © 2023</p>
+    </div>
+  </footer>
+  
 
 
 
@@ -71,7 +275,11 @@
       document.getElementById('audioPlayer').play();
     }
   </script>
-  <script src="./script.js" defer></script>
-  <script src="./form.js"></script>
+  <script src="./scrpits/script.js" defer></script>
+  <script src="./scrpits/navbar.js" defer></script>
+  <script src="./scrpits/form.js" defer></script>
+  
+
 </body>
+
 </html>
