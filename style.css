@@ -15,12 +15,33 @@
   height: 895px;
 }
 
-.navContainer {
+.navbar {
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav-list {
   display: flex;
   justify-content: space-around;
   width: 900px;
   margin: 1rem;
+  list-style: none;
 }
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+
 
 .navLink {
   display: flex;
@@ -30,23 +51,32 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 105px;
   height: 43px;
-  color: #FCC90D !important;
+  color: #FCC90D ;
   justify-content: center;
-  align-items: center !important;
+  align-items: center;
   text-align: center;
   transition: background 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 }
+
+
+
+.menu-toggle {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
 
 .navLink:hover {
-  color: #fcc80d8b !important;
+  color: #fcc80d8b;
   transform: translateY(-5px);
-}
+} 
 
 .music-player {
-  display: flex;
+  display: flex; 
   justify-content: flex-end;
-  /* Alinhar à direita */
-  margin-top: -26px;
+    margin-top: -26px;
 }
 
 #playPauseBtn {
@@ -55,13 +85,12 @@
   font-size: 16px;
   border: none;
   border-radius: 15px;
-  /* Borda arredondada */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona a transformação ao efeito de transição */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 #playPauseBtn:hover {
-  transform: translateY(-3px); /* Move o botão para cima ao passar o mouse sobre ele */
+  transform: translateY(-3px); 
 }
 
 #playPauseBtn.play {
@@ -75,7 +104,7 @@
 
 #playPauseBtn i:before {
   content: "\f04b";
-  /* Código Unicode para o ícone de play */
+  
 }
 
 #playPauseBtn.pause i:before {
@@ -209,6 +238,42 @@
   }
 }
 
+/*POP UP*/
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  width: 200vw; /* Alterado para 50% da largura da viewport */
+  max-width: 300px; /* Adicionado um limite máximo de largura */
+  text-align: center;
+}
+
+.popup-content {
+  width: 100%; /* Garante que a largura do conteúdo seja 100% do popup */
+}
+
+.popup-content img {
+  width: 100%; /* Define o tamanho da imagem igual à largura do conteúdo */
+  max-width: 100%; /* Garante que a imagem não ultrapasse 100% do tamanho do container */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 28px; /* Reduzi o tamanho da fonte para ser mais proporcional ao popup reduzido */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+
 
 /*Main*/
 
@@ -297,13 +362,7 @@
   width: 380px;
 }
 
-.galery img {
-  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
-}
 
-.galery img:hover {
-  transform: scale(1.2); /* Ajusta a escala para o efeito de zoom desejado */
-}
 
 
 .bercario {
@@ -321,8 +380,11 @@
 }
 
 
-=======
->>>>>>> 34a3a6f3b024d1ba98756f82a5dc66355a6e1e5f
+.galery img:hover {
+  transform: scale(1.2);
+}
+
+
 .bercario {
   display: flex;
   background: #C3EDFF;
@@ -637,6 +699,8 @@ button {
   justify-content: center;
 }
 
+
+
 .copy {
   display: flex;
   background: #232F7D;
@@ -657,15 +721,67 @@ button {
 
 @media screen and (max-width: 768px) {
 
+  body{
+    width: 100%;
+  }
+
   .headerContainer {
     background-image: url('./assets/bgMobile.png');
+    width: 100%;
+    max-height: 795px;
+ 
   }
 
   .headerContent {
     flex-direction: column;
   }
 
-  .stars {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 132px;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .music-player {
+    display: block;
+    position: relative; /* Change from absolute to relative */
+    top: auto; /* Remove top positioning */
+    right: auto; /* Remove right positioning */
+    margin-top: 15px; /* Adjust margin to create space below the last item */
+    margin-right: 15rem;
+  }
+
+  .music-player button {
+    margin-left: auto; /* Align the play button to the right */
+    margin-right: auto;
+  }
+
+  .stars{
+    width: 100%;
+  }
+
+  .stars .star1:last-child {
+    display: none;
+  }
+
+  .star2, .star3 {
     display: none;
   }
 
@@ -677,7 +793,9 @@ button {
     font-size: 20px;
     width: 350px;
     padding: 2em 0 2em 0;
+
     margin-top: -4em;
+
   }
 
   .logoImag {
@@ -689,6 +807,10 @@ button {
     margin-top: 3em;
   }
 
+  .mainContainer{
+    overflow-x: hidden;
+  }
+
   .criancas {
     width: 100%;
     align-items: center;
@@ -698,8 +820,13 @@ button {
     display: none;
   }
 
+
+  #abc{
+    display: none !important;
+  }
+
   #sala {
-    display: flex;
+    display: flex !important;
     margin: 0.5em auto;
   }
 
@@ -728,6 +855,11 @@ button {
     height: 100vh;
     justify-content: center;
     padding: 0.5em;
+  }
+
+
+  .bercarioInfo{
+    width: 100%;
   }
 
   .school p,
@@ -764,11 +896,13 @@ button {
     display: none;
   }
 
+  
   #mundo2 {
     display: flex;
     width: 100%;
+
     margin-bottom: -64px;
-    
+
   }
 
   .footerContainer {
@@ -793,3 +927,13 @@ button {
   .visit p {
     font-size: 16px;
     width: 100%
+
+  }
+
+  input,
+  textarea {
+    width: 100%
+  }
+
+
+  }

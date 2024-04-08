@@ -1,0 +1,142 @@
+
+.navbar {
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  margin: 1rem;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+
+
+.navLink {
+  display: flex;
+  border-radius: 28px;
+  border: 1px solid #FCC90D;
+  background: #232F7D;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 105px;
+  height: 43px;
+  color: #FCC90D ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+
+
+.menu-toggle {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
+
+.navLink:hover {
+  color: #fcc80d8b;
+  transform: translateY(-5px);
+} 
+
+.music-player {
+  display: flex; 
+  justify-content: flex-end;
+    margin-top: -26px;
+}
+
+#playPauseBtn {
+  color: #232F7D;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#playPauseBtn:hover {
+  transform: translateY(-3px); 
+}
+
+#playPauseBtn.play {
+  background-color: #FCC90D;
+}
+
+#playPauseBtn.pause {
+  background-color: #e74c3c;
+  color: #FCC90D;
+}
+
+#playPauseBtn i:before {
+  content: "\f04b";
+  
+}
+
+#playPauseBtn.pause i:before {
+  content: "\f04c";
+  /* Código Unicode para o ícone de pause */
+}
+
+
+
+@media screen and (max-width: 768px) {
+.headerContent {
+  flex-direction: column;
+}
+
+.nav-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 132px;
+  left: 0;
+  width: 100%;
+}
+
+.nav-list.show {
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.music-player {
+  display: block;
+  position: relative; /* Change from absolute to relative */
+  top: auto; /* Remove top positioning */
+  right: auto; /* Remove right positioning */
+  margin-top: 15px; /* Adjust margin to create space below the last item */
+  margin-right: 15rem;
+}
+
+.music-player button {
+  margin-left: auto; /* Align the play button to the right */
+  margin-right: auto;
+}
+}

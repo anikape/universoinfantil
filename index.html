@@ -4,49 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="escola, universo, infantil, Hotelzinho, berçario, educação infantil, infantil, universo" >
+  <meta name="description" content="escola, universo, infantil, Hotelzinho, berçario, educação infantil, infantil, universo, Abreu e Lima, Abreu, escolinha">
   <title>Universo Infantil</title>
   <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5RD582YFR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-T5RD582YFR');
-</script>
+  <link rel="stylesheet" href="style.css" media="all">
+  <link rel="shortcut icon" href="./assets/android-chrome-512x512.png" />
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5RD582YFR" defer></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-T5RD582YFR');
+  </script>
 </head>
 
 <body>
   <header class="headerContainer">
-    <section class="navigation">
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav navContainer">
-              <a class="nav-link navLink" href="#">Início</a>
-              <a class="nav-link navLink" href="#aboutUs">Sobre Nós</a>
-              <a class="nav-link navLink" href="#services">Espaço</a>
-              <a class="nav-link navLink" href="#services">Serviços</a>
-              <a class="nav-link navLink" href="#contato">Contato</a>
-              <div class="music-player">
-                <audio id="audio" src="360ytmp3.com_256kbps-musica-aquarela-original-toquinho.mp3"></audio>
-                <button id="playPauseBtn" class="play">Play</button>
-              </div>
+
+   
+      <section class="navigation">
+
+        <nav class="navbar">
+  
+          <ul class="nav-list">
+            <li><a class="navLink" href="index.html">Início</a></li>
+            <li><a class="navLink" href="#">Serviços</a></li>
+            <li><a class="navLink" href="#">Espaço</a></li>
+            <li><a class="navLink" href="equipe.html">Equipe</a></li>
+            <li><a class="navLink" href="#">Contato</a></li>
+            <div class="music-player">
+              <audio id="audio" src="360ytmp3.com_256kbps-musica-aquarela-original-toquinho.mp3"></audio>
+              <button id="playPauseBtn" class="play">Play</button>
             </div>
-          </div>
-        </div>
-      </nav>
-    </section>
+          </ul>
+  
+          <div class="menu-toggle">&#9776;</div>
+        </nav>
+       
+      </section>
+ 
 
     <div class="stars">
       <img class="star1" src="assets/star.png" alt='imagem de uma estrela dourada' />
@@ -58,9 +58,9 @@
       <img class="star2" src='assets/star2.png' alt='imagem de uma estrela dourada' />
       <img id="starmb" class="star1" src="assets/star.png" alt='imagem de uma estrela dourada grande' />
 
-      
+
     </div>
-             
+
 
     <section class="headerContent">
 
@@ -68,7 +68,7 @@
         <h1>Bem-vindo ao Centro Educacional Universo Infantil.<br />
           Onde Cada Criança é uma Estrela em Ascensão!</h1>
 
-       
+
         <div class="effects">
           <img class="airplane" src='./assets/plane.png' alt='Foguete com 3 crianças' />
           <img class="plan2" src='./assets/bluePlanet.png' alt='planeta' />
@@ -89,6 +89,18 @@
 
 
   <main>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <span class="close" onclick="fecharPopup()">&times;</span>
+          <img src="./assets/news.jpg" alt="">
+      </div>
+  </div>
+  
+    </div>
+
+    <!-- Seu Código JavaScript -->
     <section class="mainContainer">
       <div class="criancas">
         <img class="criancaImg" src="./assets/criancas.png" alt="crianças brincando" />
@@ -116,10 +128,10 @@
         </div>
 
         <div class="galery">
-          <img src="./assets/escola1.png" alt="" />
-          <img src="./assets/escola2.png" alt="" />
-          <img src="./assets/escola3.png" alt="" />
-          <img src="./assets/escola4.png" alt="" />
+          <img src="./assets/escola1.png" alt="Imagem de alunos" />
+          <img src="./assets/escola2.png" alt="Imagem de alunos" />
+          <img src="./assets/escola3.png" alt="Imagem de alunos" />
+          <img src="./assets/escola4.png" alt="Imagem de alunos" />
         </div>
       </section>
 
@@ -133,7 +145,7 @@
 
         </div>
         <div class="bercarioImg">
-          <img src="./assets/mundo.png" alt="" />
+          <img src="./assets/mundo.png" alt="Imagem de um planeta colorido" />
         </div>
 
       </section>
@@ -148,7 +160,7 @@
 
         </div>
         <div class="bercarioImg">
-          <img id="arvore" src="./assets/tree.png" alt="" />
+          <img id="arvore" src="./assets/tree.png" alt="Imagem de uma árvore" />
         </div>
 
       </section>
@@ -172,25 +184,27 @@
           necessidades individuais de cada criança, garantindo uma base sólida para seu sucesso futuro.</p>
       </div>
 
-      <img class="hands1" src="./assets/hands.png" alt="" srcset="">
+      <img class="hands1" src="./assets/hands.png" alt="Imagem de mãos coloridas" srcset="">
 
-      <img class="hands" src="./assets/maos.png" alt="" srcset="">
+      <img class="hands" src="./assets/maos.png" alt="Imagem de mãos coloridas" srcset="">
     </section>
 
     <section class="jornada">
       <div>
-        <img class="flower" src="./assets/flor.png" />
+        <img class="flower" src="./assets/flor.png" alt="Imagem de uma flor" />
         <p class="dream">"Na jornada da parentalidade, somos arquitetos dos sonhos, construtores de memórias e guias amorosos na
           descoberta do extraordinário universo que é cada filho. Cada desafio é uma oportunidade de crescimento, cada
           sorriso, uma recompensa única. Juntos, estamos moldando não apenas o futuro, mas o coração de uma nova
           geração."</p>
-        <img class="book" src="./assets/livro.png" />
+        <img class="book" src="./assets/livro.png" alt="Imagem de um livro" />
       </div>
-      <img id="mundo" src="./assets/mundo-1.png" </section>
+      <img id="mundo" src="./assets/mundo-1.png" alt="imagem do mundo" />
 
-      <img id="mundo2" src="./assets/mundo2.png" </section>
+      <img id="mundo2" src="./assets/mundo2.png" alt="imagem do mundo" />
+    </section>
 
   </main>
+
   <footer>
     <section class="footerContainer">
 
@@ -211,23 +225,23 @@
         <ul>
           <li>
             <a href="https://wa.me/5581979144951" target="_blank">
-              <img class="social" src="./assets/whats-app.png" alt="" srcset="">
+              <img class="social" src="./assets/whats-app.png" alt="Icone Whatsapp" srcset="">
             </a>
           </li>
           <li>
             <a href="social">
-              <img class="social" src="./assets/facebook.png" alt="" srcset="">
+              <img class="social" src="./assets/facebook.png" alt="Icone facebook" srcset="">
             </a>
           </li>
           <li><a class="social" href="https://www.instagram.com/ceuniversoinfantil/" target='_blank'>
-              <img class="social" src="./assets/instagram-circle.png" alt="" srcset=""></a></li>
+              <img class="social" src="./assets/instagram-circle.png" alt="Icone instagram" srcset=""></a></li>
           <li><a class="social" href="mailto:educuniversoinfantil@gmail.com " target='_blank'>
-            <img class="social"  src="./assets/circled-envelope.png" alt="" srcset=""></a></li>
+              <img class="social" src="./assets/circled-envelope.png" alt="Icone e-mail" srcset=""></a></li>
         </ul>
 
         <h3 id="mapH3">Localização:</h3>
         <div class="maps">
-          <img class="map" src="./assets/place-marker.png" alt="" srcset="">
+          <img class="map" src="./assets/place-marker.png" alt="Icone Mapa" srcset="">
           <p>Caetés I, Abreu e Lima-PE</p>
         </div>
       </div>
@@ -236,7 +250,7 @@
 
         <h3>Formulário</h3>
 
-        <form action="https://formspree.io/f/meqbyvbb" method="POST">
+        <form id="contactForm" action="https://formspree.io/f/xdoqnokd" method="POST">
           <div class="labelForm">
             <label for="name">Nome</label>
             <input type="text" name="name">
@@ -252,29 +266,22 @@
           </div>
           <!-- your other form fields go here -->
           <button type="submit">Enviar</button>
+          <div id="successMessage" style="display: none; justify-content: center; align-items: center; text-align: center; margin: 0 auto; background-color: #f0f0f0; color: #232F7D; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">Mensagem enviada com sucesso!</div>
+
         </form>
+
+
 
       </div>
     </section>
 
-    <img class="lapis" src="./assets/lapis.png" alt="">
+    <img class="lapis" src="./assets/lapis.png" alt="Icone Lápis">
 
     <div class="copy">
       <p>TODOS OS DIREITOS RESERVADOS DESENVOLVIDO POR CODECRAFTHOUSE | © 2023</p>
     </div>
   </footer>
-  
-  <div vw  class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
- 
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
@@ -282,7 +289,11 @@
       document.getElementById('audioPlayer').play();
     }
   </script>
-  <script src="script.js" defer></script>
+  <script src="./scrpits/script.js" defer></script>
+  <script src="./scrpits/navbar.js"></script>
+  <script src="./scrpits/form.js"></script>
+  <script src="./scrpits/popup.js"></script>
+
 </body>
 
 </html>
