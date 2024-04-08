@@ -362,9 +362,23 @@
   width: 380px;
 }
 
+
+
+
+.bercario {
+  display: flex;
+  background: #C3EDFF;
+  width: 965px;
+  height: 361px;
+  margin-top: 3rem<<<<<<< HEAD
 .galery img {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
 }
+
+.galery img:hover {
+  transform: scale(1.2); /* Ajusta a escala para o efeito de zoom desejado */
+}
+
 
 .galery img:hover {
   transform: scale(1.2);
@@ -618,6 +632,22 @@ footer {
 .labelForm {
   margin-bottom: 2rem;
 }
+button[type="submit"] {
+  background-color: #232F7D;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; 
+}
+
+
+button[type="submit"]:hover {
+  background-color: #4356B8;
+  transform: translateY(-5px);
+}
+
 
 label {
   display: flex;
@@ -763,7 +793,8 @@ button {
     font-size: 20px;
     width: 350px;
     padding: 2em 0 2em 0;
-   
+
+    margin-top: -4em;
 
   }
 
@@ -789,10 +820,10 @@ button {
     display: none;
   }
 
+
   #abc{
     display: none !important;
   }
-
 
   #sala {
     display: flex !important;
@@ -809,12 +840,14 @@ button {
     font-size: 16px;
     padding: 0.5em;
   }
-
-  
+  .galery {
+    display: inline;
+    width: 100% !important;
+  }
   .turtle {
     display: none;
   }
-
+  
   .escola,
   .bercario {
     flex-direction: column;
@@ -824,10 +857,10 @@ button {
     padding: 0.5em;
   }
 
+
   .bercarioInfo{
     width: 100%;
   }
-
 
   .school p,
   .bercario p {
@@ -867,7 +900,9 @@ button {
   #mundo2 {
     display: flex;
     width: 100%;
-   
+
+    margin-bottom: -64px;
+
   }
 
   .footerContainer {
@@ -885,38 +920,14 @@ button {
   }
 
   .visit h3 {
-    width: 90%
+    width: 100%
   }
 
 
   .visit p {
     font-size: 16px;
-    width: 80%
-  }
-
-  .contact ul {
-    justify-content: center;
-  }
-
-  .maps {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .copy {
-    padding: 1em 0;
-  }
-
-  .copy p {
-    font-size: 10px;
-  }
-
-  .lapis {
-    width: 100%;
-  }
-
-  .form {
     width: 100%
+
   }
 
   input,
@@ -925,4 +936,4 @@ button {
   }
 
 
-}
+  }
