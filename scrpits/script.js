@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Obtém a data atual
+const currentDate = new Date();
+
+// Obtém o ano atual
+const currentYear = currentDate.getFullYear();
+
+// Atualiza o elemento HTML com a data atual
+document.getElementById('copyright').textContent = `TODOS OS DIREITOS RESERVADOS DESENVOLVIDO POR CODECRAFTHOUSE | © ${currentYear}`;
+

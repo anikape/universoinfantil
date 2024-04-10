@@ -7,7 +7,11 @@
   <title>Equipe Pedagógica</title>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
   <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="carrousel.css">
   <link rel="stylesheet" href="equipe.css">
+
+
+
 </head>
 
 <body>
@@ -31,11 +35,11 @@
 
         <div class="menu-toggle">&#9776;</div>
       </nav>
-     
+
     </section>
-   
-    
-   
+
+
+
 
     <img class="moon" src="./assets/moon.png" alt="Imagem da Lua" srcset="">
     <img class="satelite" src="./assets/satelite.png" alt="Imagem da Lua" srcset="">
@@ -52,138 +56,71 @@
         <img class="nuvem" src="./assets/nuvem.png" alt="Nuvem">
         <h1 class="title">Equipe Pedagógica</h1>
         <img src="./assets/planetalaranja.png" alt="Imagem de um planeta na cor laranja" class="planetalaranja">
-        <img  src="./assets/planetarosa.png" alt="Imagem de um planeta rosa" class="planetarosa">
-        
+        <img src="./assets/planetarosa.png" alt="Imagem de um planeta rosa" class="planetarosa">
+
         <img src="./assets/nave2.png" alt="" class="nave">
 
       </div>
     </section>
 
-    <section class="cards">
-
-      <div class="card1">
-
-        <div class="container">
-          <div class="card" >
-          <div class="img-box">
-              <img src="./assets/Rose.png">
+    <div class="carousel-container">
+      <div class="carousel">
+          <div class="card">
+              <img src="./assets/juliana.png" alt="Foto de Juliana">
+              <h3>Juliana</h3>
+              <p>Psicopedagoga &nbsp;&bull;
+                Letras &nbsp;&bull;
+                Inglês &nbsp;&bull;
+                Pedagogia &nbsp;&bull;
+                Psicopedagogia &nbsp;&bull;
+                Mestrado em Linguística e Ensino - UFPB
+                Especialização ABA (cursando) </p>
           </div>
-          <div class="content">
-              <h2>Rosemere</h2>
-              <p>
-                    
-                Professora
-                Coordenadora Pedagógica 
-                Pedagoga (Neuropsicopedagoga) 
-              </p>
-         </div>
-        </div>
-      
-
-        <div class="container" id="cardTop" style="margin-top: -150px;">
-          <div class="card" >
-              <div class="img-box">
-                  <img src="./assets/juliana.png">
-              </div>
-              <div class="content">
-                  <h2>Juliana</h2>
-                  <p>
-                        
-                    Psicopedagoga
-                    Letras 
-                    Inglês 
-                    Pedagogia 
-                    Psicopedagogia 
-                    Mestrado em Linguística e Ensino - UFPB
-                    Especialização ABA (cursando) 
-                  </p>
-               
-              </div>
+          <!-- Adicione os outros 5 cards aqui -->
+          <div class="card">
+              <img src="./assets/Rose.png" alt="Foto da pessoa 2">
+              <h3>Rosemere</h3>
+              <p> Professora &nbsp;&bull;
+                Coordenadora Pedagógica &nbsp;&bull;
+                Pedagoga (Neuropsicopedagoga) </p>
           </div>
+
+          <div class="card">
+            <img src="/assets/betania.png" alt="Foto da pessoa 2">
+            <h3>Betânia</h3>
+            <p>Professora de Ensino Médio Normal</p>
         </div>
 
-        <div class="container">
-          <div class="card" >
-              <div class="img-box">
-                  <img src="./assets/luciana.png">
-              </div>
-              <div class="content">
-                  <h2>Luciana</h2>
-                  <p>
-                        
-                    Auxiliar de Ensino Médio
-                    Curso de Berçarista 
-                  </p>
-               
-              </div>
-          </div>
+        <div class="card">
+          <img src="./assets/poli.png" alt="Foto da pessoa 2">
+          <h3>Poliana</h3>
+          <p> Auxiliar de Ensino Médio&nbsp;&bull;
+            Curso de Berçarista </p>
+      </div>
 
-        </div>
+      <div class="card">
+        <img src="./assets/luciana.png" alt="Foto da pessoa 2">
+        <h3>Luciana</h3>
+        <p>Auxiliar de Ensino Médio&nbsp;&bull;
+          Curso de Berçarista </p>
+    </div>
+    <div class="card">
+      <img src="./assets/tati.png" alt="Foto da pessoa 2">
+      <h3>Thayllane</h3>
+      <p>Auxiliar de Ensino Médio </p>
+  </div>
+          <!-- Repita para os outros 4 cards -->
+      </div>
+      <div class="carousel-controls">
+          <button id="prev">←</button>
+          <button id="next">→</button>
+      </div>
+  </div>
+
+ 
 
 
-        <div class="turtleContainer">
-          <figure>
-            <img src="./assets/turtle.png" alt="" srcset="">
-          </figure>
-        </div>
-
-
-        <div class="card2">
-
-          <div class="container">
-            <div class="card" >
-            <div class="img-box">
-                <img src="./assets/tati.png">
-            </div>
-            <div class="content">
-                <h2>Thayllane </h2>
-                <p>
-                   Auxiliar de Ensino Médio 
-                </p>
-           </div>
-          </div>
-        
-  
-          <div class="container" id="cardTop" style="margin-bottom: -150px;">
-            <div class="card" >
-                <div class="img-box">
-                    <img src="./assets/betania.png">
-                </div>
-                <div class="content">
-                    <h2>Betânia</h2>
-                    <p>
-                      Professora de Ensino Médio Normal
-                    </p>
-                 
-                </div>
-            </div>
-          </div>
-  
-          <div class="container">
-            <div class="card" >
-                <div class="img-box">
-                    <img src="./assets/poli.png">
-                </div>
-                <div class="content">
-                    <h2>Poliana</h2>
-                    <p>
-                          
-                      Auxiliar de Ensino Médio
-                      Curso de Berçarista 
-                    </p>
-                 
-                </div>
-            </div>
-  
-          </div>
-  
-
-     
-    
-    </section>
-
-      
-<img class="montanha" src="./assets/montanhas.png" alt="Imagem de uma montanha">
+    <img class="montanha" src="./assets/montanhas.png" alt="Imagem de uma montanha">
 
   </main>
 
@@ -218,13 +155,13 @@
           <li><a class="social" href="https://www.instagram.com/ceuniversoinfantil/" target='_blank'>
               <img class="social" src="./assets/instagram-circle.png" alt="Icone instagram" srcset=""></a></li>
           <li><a class="social" href="mailto:educuniversoinfantil@gmail.com " target='_blank'>
-            <img class="social"  src="./assets/circled-envelope.png" alt="Icone e-mail" srcset=""></a></li>
+              <img class="social" src="./assets/circled-envelope.png" alt="Icone e-mail" srcset=""></a></li>
         </ul>
 
         <h3 id="mapH3">Localização:</h3>
         <div class="maps">
           <img class="map" src="./assets/place-marker.png" alt="Icone Mapa" srcset="">
-          <p>Caetés I, Abreu e Lima-PE</p>
+          <p>Rua 186,25. Caetés I, Abreu e Lima-PE</p>
         </div>
       </div>
 
@@ -249,10 +186,10 @@
           <!-- your other form fields go here -->
           <button type="submit">Enviar</button>
           <div id="successMessage" style="display: none; justify-content: center; align-items: center; text-align: center; margin: 0 auto; background-color: #f0f0f0; color: #232F7D; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">Mensagem enviada com sucesso!</div>
-          
+
         </form>
-      
-        
+
+
 
       </div>
     </section>
@@ -260,10 +197,10 @@
     <img class="lapis" src="./assets/lapis.png" alt="Icone Lápis">
 
     <div class="copy">
-      <p>TODOS OS DIREITOS RESERVADOS DESENVOLVIDO POR CODECRAFTHOUSE | © 2023</p>
+      <p id="copyright"></p>
     </div>
   </footer>
-  
+
 
 
 
@@ -277,8 +214,9 @@
   </script>
   <script src="./scrpits/script.js" defer></script>
   <script src="./scrpits/navbar.js" defer></script>
+   <script src="./scrpits/carrousel.js"></script>
   <script src="./scrpits/form.js" defer></script>
-  
+
 
 </body>
 

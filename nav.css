@@ -1,7 +1,23 @@
 
-.navbar {
+/* .navbar {
 
   color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+  z-index: 1000;
+} */
+
+.navbar {
+  position: fixed; /* Fixa a navbar no topo da página */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Define a cor de fundo como transparente */
+  z-index: 1000; /* Garante que a navbar esteja acima de outros elementos */
+  color: #fff; /* Cor do texto */
   display: flex;
   justify-content: center;
   gap: 10px;
