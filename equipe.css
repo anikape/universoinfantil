@@ -216,24 +216,10 @@ margin: 0 auto;
 
 
 
-.tartaruga-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.turtle {
  
-
-}
-
-
-.turtleContainer{
   display: flex;
-  justify-content: center;
-}
-
-.tartaruga {
- 
-  width: 200px;
-  height: auto;
+  margin: 0 auto;
   
 }
 
