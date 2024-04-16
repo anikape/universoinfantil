@@ -234,8 +234,6 @@ margin: 0 auto;
 }
 
 
-
-
 footer {
   background: #C3EDFF;
   width: 100%;
@@ -435,6 +433,38 @@ button {
   line-height: normal;
   margin: 1em auto;
 }
+
+
+.iframemap{
+  margin-top: 10px;
+}
+
+#goTopBtn {
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px; /* Distância do botão até o fundo */
+  right: 30px; /* Distância do botão até a direita */
+  z-index: 99; /* Garante que o botão esteja sempre acima do conteúdo */
+  border: none; /* Remove a borda do botão */
+  outline: none; /* Remove o contorno ao focar */
+  background-color: #232F7D; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Cursor de ponteiro ao passar por cima */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 12px; /* Borda arredondada */
+  font-size: 34px; /* Altere o tamanho conforme necessário */
+  width: 45px; /* Ajuste a largura conforme necessário */
+  height: 55px; /* Ajuste a altura conforme necessário */
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+
+#goTopBtn:hover {
+  background-color: #FCC90D; /* Cor de fundo ao passar o mouse */
+}
+
 
 @media screen and (max-width: 768px) {
 
