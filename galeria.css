@@ -33,6 +33,10 @@ body {
   right: 3rem;
 }
 
+.galerry{
+  height: 100hv;
+}
+
 h2 {
   color: #FCC90D;
   text-align: center;
@@ -40,25 +44,47 @@ h2 {
   margin-bottom: 35px;
 }
 
+p{
+  color: #FFF;
+  width: 810px;
+  margin: 5px auto;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 .gallery-container {
-  max-width: 900px;
-  margin: 10px auto;
+  max-width: 1000px;
+  margin: 30px auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Define duas colunas com largura igual */
-  gap: 20px; /* Espaçamento entre os vídeos */
+  grid-template-columns: repeat(3, 1fr); /* Agora serão três colunas com largura igual */
+  gap: 25px; /* Espaçamento entre os vídeos */
 }
 
 .video-wrapper {
-  width: calc(50% - 10px); /* Metade do espaço da linha com um espaçamento de 20px */
+  width: 60%;/* Reduz o espaço ocupado pelos vídeos para adicionar um espaçamento */
   margin-bottom: 20px;
+  position: relative; /* Adiciona posição relativa para permitir ajuste do tamanho do vídeo */
 }
 
-.video-wrapper iframe {
-  width: 100%;
-  background: #232F7D !important;
+.video-wrapper video {
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  height: auto; /* Altura ajustável proporcionalmente à largura */
+  border: 2px solid #FCC90D;
+  box-shadow: 0 0 10px #FCC90D;
+}
+
+#agata{
+  width: 70%;
+}
+
+.video-wrapper video:hover{
+  transform: scale(1.1);
+  transition: .5s ease-in-out;
 }
 
 .video-wrapper p {
   margin-top: 10px;
   font-style: italic;
-}
+  
+  }
