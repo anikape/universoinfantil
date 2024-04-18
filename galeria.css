@@ -89,6 +89,22 @@ h2 {
   
   }
 
+  .img{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .img img{
+    border: 2px solid #FCC90D;
+    box-shadow: 0 0 10px #FCC90D;
+    height: auto;
+    width: 300px;
+  }
+
+  .img img:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;}
 
   #goTopBtn {
     display: none; /* Inicialmente oculto */

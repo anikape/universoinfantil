@@ -602,3 +602,37 @@ button {
 
 
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+
+  .galerry {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+
+  h2 {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+
+  #psico {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+
+  .gallery-container {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+
+  .video-wrapper {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+
+  .img {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+
+  #goTopBtn {
+    /* Adicione estilos específicos para telas com largura máxima de 768px aqui */
+  }
+}
