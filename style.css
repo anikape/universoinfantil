@@ -246,27 +246,32 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
-  width: 200vw; /* Alterado para 50% da largura da viewport */
-  max-width: 300px; /* Adicionado um limite máximo de largura */
+  width: 60%; /* Largura do popup ajustada */
+  max-width: 700px; /* Limite máximo de largura */
   text-align: center;
+  background-color: white; /* Fundo branco para visibilidade */
+  padding: 20px; /* Padding para melhor espaçamento */
+  box-shadow: 4px 8px 12px rgba(252, 201, 13, 0.5); /* Sombra amarela suave */ /* Sombra para melhor visual */
+  position: relative; /* Torna o contêiner relativo para posicionar o botão de fechar */
 }
 
 .popup-content {
-  width: 100%; /* Garante que a largura do conteúdo seja 100% do popup */
+  display: flex; /* Define o contêiner como flexível */
+  justify-content: space-between; /* Espaça as imagens uniformemente */
+  align-items: center; /* Centraliza as imagens verticalmente */
 }
 
 .popup-content img {
-  width: 100%; /* Define o tamanho da imagem igual à largura do conteúdo */
-  max-width: 100%; /* Garante que a imagem não ultrapasse 100% do tamanho do container */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 48%; /* Define a largura das imagens para 48% para criar um espaçamento entre elas */
+  height: auto; /* Mantém a proporção das imagens */
 }
 
 .close {
-  color: black;
-  float: right;
-  font-size: 28px; /* Reduzi o tamanho da fonte para ser mais proporcional ao popup reduzido */
-  font-weight: bold;
-  cursor: pointer;
+  position: absolute; /* Torna o botão de fechar absoluto */
+  top: 18px; /* Posiciona o botão de fechar 10px do topo */
+  font-size: 35px; /* Aumenta o tamanho da fonte do botão de fechar */
+  cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+  color: #333; /* Define a cor do botão de fechar */
 }
 
 .close:hover {
