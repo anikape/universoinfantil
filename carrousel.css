@@ -1,39 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  font-family: 'Exo 2', sans-serif; /* Aplicando a fonte importada */
+  background-color: #f4f4f4; /* Cor de fundo padrão */
+}
 
 .carousel-container {
   max-width: 800px;
-  margin:10rem auto;
+  margin: 10rem auto;
   overflow: hidden;
+  position: relative; /* Adiciona o contexto de empilhamento */
+  z-index: 1; /* Z-index menor para ficar atrás de outros elementos se necessário */
 }
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out; /* Transição suave ao mover os slides */
 }
 
 .card {
-  flex: 0 0 50%;
-  /* Mostra dois cards por vez */
+  flex: 0 0 100%; /* Mostra um card por vez em telas menores */
   padding: 20px;
   text-align: center;
   background-color: transparent;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Bordas arredondadas nos cards */
+  transition: transform 0.2s; /* Efeito suave ao hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o card ao passar o mouse */
 }
 
 .card img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px; /* Arredondar as bordas das imagens */
+  display: block; /* Centraliza a imagem no card */
+  margin: 0 auto; /* Margem automática para centralização */
 }
 
 .card h3 {
   margin: 10px 0;
   color: #FCC90D;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Exo 2", sans-serif;
-  font-size: 18px;
-  font-style: normal;
+  font-size: clamp(18px, 4vw, 32px); /* Tamanho de fonte responsivo */
   font-weight: 500;
 }
 
@@ -55,18 +67,23 @@
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  font-size: 20px; 
+  font-size: 20px;
+  border-radius: 5px; /* Bordas arredondadas para os botões */
 }
 
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 90%; /* Cada card ocupa a largura total em telas menores */
+    justify-content: center;
+  }
 
-@media screen and (max-width: 768px){
+  .carousel-controls {
+    flex-direction: column; /* Botões em coluna */
+    align-items: center; /* Centraliza os botões */
+  }
 
-  .carousel-container {
-
-    max-width: 800px;
-    margin: 10rem auto;
-    overflow: hidden;
-    position: relative; /* Adicione position: relative; para criar um contexto de empilhamento */
-    z-index: 1; /* Defina um valor de z-index menor que o da navbar */
+  .carousel-controls button {
+    margin: 5px 0; /* Espaço entre os botões */
   }
 }

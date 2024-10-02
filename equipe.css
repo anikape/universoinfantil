@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,10 @@ body {
 
 }
 
+.navbar{
+  position: relative;
+}
+
 .headerContainer {
   /* background-image: url('./assets/bgHeader.png');
   background-repeat: no-repeat;
@@ -19,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 500px;
+  height: 15rem;
 }
 
 
@@ -45,8 +51,12 @@ body {
 
 /*main*/
 
+.equipeMb{
+  display: none;
+}
+
 .equipe{
-  margin-top: -10rem;
+  margin-top: -50rem;
 }
 
 .naveAzul {
@@ -118,101 +128,102 @@ body {
 }
 
 
-
-/*Cards*/
-
-.cards {
-  /* display: flex;
+.card{
+  display: flex;
   flex-direction: column;
-margin: 0 auto;
- width: 90%; */
- margin-top: 15rem;
-
-}
-
-
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 100px 50px;
-  padding: 100px 50px;
+  padding: 3rem;
 }
 
-.container .card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 350px;
-  max-width: 100%;
-  height: 300px;
-  /* background: white; */
-  border-radius: 20px;
-  transition: 0.5s;
+.card h3, ul{
+  color: #FCC90D;
   
 }
 
-.container .card:hover {
-  height: 400px;
-  cursor: pointer;
+.card h3{
+  font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
+
 }
 
-.container .card .img-box {
-  position: absolute;
-  top: 20px;
-  width: 300px;
-  height: 220px;
-  /* background: #333; */
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.5s;
+.card ul{
+  font-size: clamp(0.75rem, 1vw + 0.25rem, 0.875rem); 
+  padding-top: 0.9em;
+  margin: 0;
 }
 
-.container .card:hover .img-box {
-  top: -100px;
-  scale: 0.75;
-  /* box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2); */
+.card ul li {
+  margin-bottom: 0.5rem; /* Espaçamento entre os itens da lista */
+  color: #FCC90D; 
+  
 }
 
-.container .card .img-box img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.wrapper {
+  margin: 0 auto;
+  max-width: 90%;
 }
 
-.container .card .content {
-  position: absolute;
-  top: 252px;
-  width: 100%;
-  height: 35px;
-  padding: 0 30px;
+.banner {
+  height: 50vh;
+  background-color: black;
   text-align: center;
-  overflow: hidden;
-  transition: 0.5s;
 }
 
-.container .card:hover .content {
-  top: 130px;
-  height: 250px;
+.banner__info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.container .card .content h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
- 
 
+
+.container {
+  padding: 15px 0;
+  margin: 6rem auto;                   
+  display: flex;
+  flex-wrap: wrap;    
+  justify-content: center; 
+  position: relative; /* Adiciona contexto para o overlay */
 }
 
-.container .card .content p {
-  color: black;
-  padding-top: 2rem;
+/* Overlay escuro */
+.overlay {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease; /* Suaviza a transição */
+  z-index: 1; /* Coloca acima do fundo */
 }
+
+.itens {                               
+  width: 250px;
+  height: 250px; 
+  object-fit: cover;
+  margin: 15px;
+  border: 2px solid #FCC90D;
+  border-radius: 8px;
+  transition: transform 0.5s ease; 
+  position: relative; /* Para que o overlay não cubra os itens */
+  z-index: 2; /* Mantém os itens acima do overlay */
+}
+
+.itens:hover {
+  transform: scale(1.1);
+  border: 3px solid #FCC90D;
+  border-radius: 8px;
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre .itens */
+.container:hover .overlay {
+  opacity: 1; /* Torna o overlay visível ao passar o mouse sobre o contêiner */
+}
+
 
 
 
@@ -472,13 +483,30 @@ button {
     width: 100%;
   }
 
+ .headerContainer {
+    height: auto;
+    
+  }
+
   .moon, .satelite{
     display: none;
   }
-  .naveAzul, .estrela, .planetaverde, .nave, .turtleContainer, .planetarosa  {
+
+  .equipe{
     display: none;
   }
+ 
+  .equipeMb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 
+  /* .wrapper{
+    margin-top: -25rem;
+  } */
+ 
   .container .card {
     width: 230px;
     border-radius: 15px;
@@ -497,9 +525,21 @@ button {
     font-size: 0.9rem;
 }
   .equipe {
-    margin-top: -50rem;
+    display: none;
+    
     width: 100%;
   }
+   
+  .equipeMb{
+    display: flex;
+    color: #FCC90D;
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    justify-content: center;
+    margin-top: -25rem;
+    width: 100%;
+  }
+
 
   .planetalaranja{
   

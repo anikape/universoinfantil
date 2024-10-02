@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
 
 }
 
@@ -269,7 +273,8 @@
 .close {
   position: absolute; /* Torna o botão de fechar absoluto */
   top: 18px; /* Posiciona o botão de fechar 10px do topo */
-  font-size: 35px; /* Aumenta o tamanho da fonte do botão de fechar */
+  font-size: clamp(24px, 5vw, 35px);
+  /* Aumenta o tamanho da fonte do botão de fechar */
   cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
   color: #333; /* Define a cor do botão de fechar */
 }
